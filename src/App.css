@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  background: #f9f9f9;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 100vh solid #333333;   /* uchburchakning balandligi va rangi */
+  border-right: 100vw solid transparent; /* uchburchakning eni */
+  z-index: -1; /* ichki kontent ustida bo‘lmasligi uchun */
+}

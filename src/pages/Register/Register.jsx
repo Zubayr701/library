@@ -3,9 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/Auth';
 import { API } from '../../utils/config';
 import { toast } from 'react-toastify';
-import { AiOutlineEye } from "react-icons/ai";
-import { AiOutlineEyeInvisible } from "react-icons/ai";
-
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
